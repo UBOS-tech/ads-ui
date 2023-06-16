@@ -4,7 +4,7 @@
         "name": "JSObject1",
         "pageId": "home",
         "organizationId": "Org",
-        "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tstart: () => {\n\tsetInterval(function () {deviceChecker.run()},30000, \"active\");\t\n\t},\n\tclear: async () => {\n  clearInterval(\"active\")}\n}",
+        "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tstart: () => {\n\t\tsetInterval(function () {deviceChecker.run()},30000, \"active\");\t\n\t},\n\tclear: async () => {\n  \tclearInterval(\"active\")\n\t}\n}",
         "variables": [
             {
                 "name": "myVar1",
@@ -23,7 +23,7 @@
                 "organizationId": "Org",
                 "executeOnLoad": true,
                 "actionConfiguration": {
-                    "body": "() => {\n\tsetInterval(function () {deviceChecker.run()},30000, \"active\");\t\n\t}",
+                    "body": "() => {\n\t\tsetInterval(function () {deviceChecker.run()},30000, \"active\");\t\n\t}",
                     "isAsync": true,
                     "timeoutInMillisecond": 10000,
                     "jsArguments": [],
@@ -62,7 +62,7 @@
                 "organizationId": "Org",
                 "executeOnLoad": false,
                 "actionConfiguration": {
-                    "body": "async () => {\n  clearInterval(\"active\")}",
+                    "body": "async () => {\n  \tclearInterval(\"active\")\n\t}",
                     "isAsync": true,
                     "timeoutInMillisecond": 10000,
                     "jsArguments": [],

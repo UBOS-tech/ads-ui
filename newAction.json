@@ -6,7 +6,7 @@
         "organizationId": "Org",
         "executeOnLoad": true,
         "actionConfiguration": {
-            "body": "() => {\n\tsetInterval(function () {deviceChecker.run()},30000, \"active\");\t\n\t}",
+            "body": "() => {\n\t\tsetInterval(function () {deviceChecker.run()},30000, \"active\");\t\n\t}",
             "isAsync": true,
             "timeoutInMillisecond": 10000,
             "jsArguments": [],
@@ -45,7 +45,7 @@
         "organizationId": "Org",
         "executeOnLoad": false,
         "actionConfiguration": {
-            "body": "async () => {\n  clearInterval(\"active\")}",
+            "body": "async () => {\n  \tclearInterval(\"active\")\n\t}",
             "isAsync": true,
             "timeoutInMillisecond": 10000,
             "jsArguments": [],
@@ -122,7 +122,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-07-22T09:42:57.119Z",
-        "updatedAt": "2023-03-20T07:34:55.785Z",
+        "updatedAt": "2023-06-16T10:42:13.420Z",
         "deleted": false,
         "policies": [
             {
@@ -187,7 +187,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-12-07T08:13:03.666Z",
-        "updatedAt": "2023-01-16T10:05:00.449Z",
+        "updatedAt": "2023-06-16T10:42:16.799Z",
         "deleted": false,
         "policies": [
             {
@@ -209,15 +209,16 @@
         "Action": {
             "name": "getBusInfoForMap",
             "datasource": {
-                "invalids": [],
+                "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
                     "url": "{{main.env.datamanager}}/getBusInfoForMap"
                 },
+                "invalids": [],
                 "isValid": true,
-                "name": "DEFAULT_REST_DATASOURCE",
+                "pluginId": "API",
+                "messages": [],
                 "new": true,
                 "organizationId": "Org",
-                "pluginId": "API",
                 "userPermissions": []
             },
             "executeOnLoad": true,
@@ -241,6 +242,9 @@
             "dynamicBindingPathList": [
                 {
                     "key": "datasourceUrl"
+                },
+                {
+                    "key": "datasource.datasourceConfiguration.url"
                 }
             ],
             "isValid": true,
@@ -259,7 +263,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-12-06T09:47:09.344Z",
-        "updatedAt": "2023-01-16T10:07:31.591Z",
+        "updatedAt": "2023-06-16T10:42:15.771Z",
         "deleted": false,
         "policies": [
             {
@@ -464,7 +468,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-07-08T10:58:21.535Z",
-        "updatedAt": "2023-02-06T07:42:23.881Z",
+        "updatedAt": "2023-06-16T10:42:19.520Z",
         "deleted": false,
         "policies": [
             {
@@ -7018,7 +7022,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T14:07:56.350Z",
-        "updatedAt": "2022-11-21T07:41:25.513Z",
+        "updatedAt": "2023-05-19T13:09:04.610Z",
         "deleted": false,
         "policies": [
             {
@@ -7087,10 +7091,10 @@
             "isValid": true,
             "invalids": [],
             "jsonPathKeys": [
+                "main.env.datamanager",
                 "childModule_field.selectedOptionValue",
                 "parentModule1_field.selectedOptionValue",
-                "positionChild.text",
-                "main.env.datamanager"
+                "positionChild.text"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
@@ -7518,7 +7522,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T13:08:42.296Z",
-        "updatedAt": "2023-01-12T10:29:12.822Z",
+        "updatedAt": "2023-05-19T13:07:18.211Z",
         "deleted": false,
         "policies": [
             {
@@ -17398,7 +17402,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-09-20T08:42:59.629Z",
-        "updatedAt": "2023-02-22T08:28:55.603Z",
+        "updatedAt": "2023-05-19T10:09:19.350Z",
         "deleted": false,
         "policies": [
             {
@@ -18514,7 +18518,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2023-01-10T08:13:43.994Z",
-        "updatedAt": "2023-03-20T07:35:02.883Z",
+        "updatedAt": "2023-06-16T10:42:20.836Z",
         "deleted": false,
         "policies": [
             {
