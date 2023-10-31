@@ -4,6 +4,7 @@
     "slug": "jetsondashboard",
     "organizationId": "Org",
     "isPublic": true,
+    "isShowPlatformTag": true,
     "createdAt": "2023-01-12T13:32:02.111Z",
     "updatedAt": "2023-06-15T15:29:44.356Z",
     "deleted": false,
